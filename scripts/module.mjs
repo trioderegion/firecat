@@ -2,17 +2,14 @@
 /**
  * Main Module Organizational Tools
  */
-//import { MyLogger } from './my-logger.js';
 
 /**
  * Sub Modules
  */
-import { Welcome } from './modules/welcome.mjs'
 
 export class MODULE {
 
   static SUB_MODULES = {
-    Welcome,
   };
 
   static build() {
@@ -21,6 +18,7 @@ export class MODULE {
      * Initialize all Sub Modules
      */
     Hooks.on(`setup`, () => {
+      console.log('Initializing Fire Cat');
       Object.values(MODULE.SUB_MODULES).forEach(cl => cl.register());
     });
   }

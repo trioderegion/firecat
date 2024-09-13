@@ -1,5 +1,5 @@
 {
-    "name": "firecat",
+    "id": "firecat",
     "title": "Fire Cat",
     "description": "Burn baby, burn",
     "system": [],
@@ -13,11 +13,14 @@
     "languages": [
     ],
     "styles": [
+      "styles/feedback.css"
     ],
     "socket": false,
     "url": "",
     "manifest": "",
     "download": "",
-    "minimumCoreVersion": "9",
-    "compatibleCoreVersion": "9"
+    "compatibility": {
+      "minimum": "11",
+      "verified": "12"
+    }
 }
